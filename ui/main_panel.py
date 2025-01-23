@@ -93,7 +93,7 @@ class MainPanel:
             self.cart.append(wine)
             self.show_message(f"{wine['marca']} adicionado ao carrinho!", callback=self.show_catalog)
         else:
-            self.show_message("Você precisa estar logado para adicionar itens ao carrinho.", success=False)
+            self.show_message("precisas de estar logado para adicionar itens ao carrinho.", success=False)
 
 
     def show_login_message(self):

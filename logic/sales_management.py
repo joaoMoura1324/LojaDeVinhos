@@ -3,7 +3,7 @@ import csv
 
 def fetch_monthly_sales():
     """
-    Busca as vendas mensais do banco de dados com informações detalhadas.
+    Procura as vendas mensais do banco de dados com informações detalhadas.
 
     A consulta SQL seleciona as vendas do mês atual, juntando informações 
     das tabelas `Users`, `Vinhos` e `Vendas`.
@@ -41,7 +41,7 @@ def fetch_monthly_sales():
         sales = cursor.fetchall()
         return sales if sales else []
     except sqlite3.Error as e:
-        print(f"Erro ao buscar vendas: {e}")
+        print(f"Erro ao procurar vendas: {e}")
         return []
     finally:
         connection.close()
